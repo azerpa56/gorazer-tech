@@ -1,0 +1,444 @@
+/* ESTILOS GENERALES */
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+}
+
+h3{
+    text-align: center;
+}
+
+/* ESTILO DEL HEADER */
+header{
+    top: 0;
+    position: sticky;
+
+    background-color: rgb(33, 53, 236);
+
+    margin: 0 5px 5px 5px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    border-radius: 0px 0px 20px 20px;
+}
+
+header > img{
+    width: 35%;
+    height: 110%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* ESTILOS DEL NAV DESPLEGABLE */
+
+ul,ol{
+	list-style-type: none;
+}
+
+.nav li a{
+    background-color: rgb(33, 53, 236);
+    color: rgb(255, 255, 255);
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.nav li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.nav > li{
+	float: left;
+}
+
+.nav li ul{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+.nav li:hover > ul{
+	display:block;
+}
+
+.nav li ul li{
+	position: relative;
+    margin: 3px 0 3px 0;
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.nav li ul li ul{
+	right: -140px;
+	top: 0px;
+}
+
+/* ESTILOS DE SECTION SLIDER */
+
+#slider{
+    margin: 5px;
+    width: 98%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+  
+#slider > li{
+    margin: 5px;
+    width: 100%;
+    text-align: center;
+
+    border: 1px solid black;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#slider > li > img{
+    border-radius: 20px 20px 20px 20px;
+    margin: 5px;
+    width: 70%;
+    height: 70%;
+}
+
+#slider > li > article{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(33, 53, 236);
+    border-radius: 0 0 15px 15px;
+}
+
+#slider > li > article > h4{
+    padding: 10px;
+    color: white;
+    font-size: 100%;
+}
+
+#slider > li:hover{
+    transform: scale(1.2);
+    margin: 20px;
+}
+
+/* ESTILOS PRODUCTOS */
+#productos{
+    top: 5px;
+    bottom: 5px;
+
+    width: 100%;
+
+    background-color: rgb(33, 53, 236);
+}
+
+#productos > h3{
+    margin: 5px;
+
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+#productos > ul{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#productos > ul > li{
+    background-color: rgb(42, 57, 190);
+    margin: 10px;
+    padding: 5px;
+
+    width: 25%;
+
+    text-align: center;
+    color: white;
+
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#productos > ul > li:hover{
+    background-color: white;
+
+    color: rgb(0, 0, 0);
+    
+    transform: scale(1.12);
+
+    margin: 10px;
+}
+
+#productos > ul > li >img{
+    width: 60%;
+    margin: 5px;
+}
+
+#productos > ul > li >h4{
+    margin: 10px;
+}
+
+#productos > ul > li >p{
+    margin: 10px;
+}
+
+#productos > ul > li >a{
+    background-color: white;
+
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+
+    text-decoration: none;
+
+    padding: 3px;
+
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#productos > ul > li:hover > a{
+    background-color: rgb(42, 57, 190);
+    color: white;
+}
+
+/* ESTILOS DE SERVICIOS */
+#servicios{
+    top: 5px;
+    bottom: 5px;
+
+    width: 100%;
+}
+
+#servicios > h3{
+    margin: 5px;
+
+    color: rgb(42, 57, 190);
+
+    text-align: center;
+    font-size: 40px;
+}
+
+#servicios > ul{
+    margin: 20px;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#servicios > ul > li{
+    background-color: rgb(42, 57, 190);
+    margin: 10px;
+    padding: 10px;
+
+    width: 55%;
+
+    text-align: center;
+    color: white;
+
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#servicios > ul > li:hover{
+    background-color: white;
+
+    color: rgb(0, 0, 0);
+    
+    transform: scale(1.12);
+
+    margin: 10px;
+}
+
+#servicios > ul > li >img{
+    border-radius: 20px
+    ;
+    width: 60%;
+    margin: 5px;
+}
+
+#servicios > ul > li >h4{
+    margin: 10px;
+}
+
+#servicios > ul > li >p{
+    margin: 10px;
+}
+
+#servicios > ul > li >a{
+    background-color: white;
+
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+
+    text-decoration: none;
+
+    padding: 6px;
+
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#servicios > ul > li:hover > a{
+    background-color: rgb(42, 57, 190);
+    color: white;
+}
+
+/* ESTILOS DE FORMULARIO */
+#contactanos{
+    width: 95%;
+
+    padding: 10px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactanos > h3{
+    margin: 5px;
+
+    color: rgb(42, 57, 190);
+
+    text-align: center;
+    font-size: 40px;
+}
+
+#contactanos > form{
+    background-color: rgb(42, 57, 190);
+
+    color: white;
+
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+
+    border: 1px solid black;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactanos > form > label{
+    font-size: 20px;
+    margin: 5px;
+}
+
+#contactanos > form > input{
+    font-size: 20px;
+    padding: 3px;
+
+    border-radius: 7px;
+}
+
+#contactanos > form > textarea{
+    font-size: 20px;
+    padding: 3px;
+
+    border-radius: 7px;
+}
+
+/* ESTILOS FOOTER */
+footer{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+    font-size: 30px;
+
+    background-color: rgb(156, 156, 156);
+
+    margin: 20px 0 0 0;
+    padding: 10px;
+
+    border-top: 1px solid black;
+}
+
+footer > #social-media{
+    display: flex;
+    align-items: center;
+    align-content: space-evenly;
+    flex-direction: row;
+
+    margin: 10px;
+    width: 50%;
+}
+
+footer > #social-media > a{
+    width: 25%;
+    margin: 5px;
+}
+
+footer > #social-media > a > img{
+    width: 50%;
+}
+
+/* ESTILOS PARA TELEFONO */
+@media (max-width: 500px) {
+    header{
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header > img{
+        width: 400px;
+    }
+
+    #slider{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    #slider > li{
+        width: 70%;
+    }
+
+    #productos > ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #productos > ul > li{
+        width: 70%;
+    }
+
+    #servicios > ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #servicios > ul > li{
+        width: 70%;
+    }
+
+    #contactanos > form{
+        width: 80%;
+    }
+  }
